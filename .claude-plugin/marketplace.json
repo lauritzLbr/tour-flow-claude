@@ -1,0 +1,22 @@
+{
+  "name": "tour-flow",
+  "owner": {
+    "name": "tour-flow",
+    "email": "it@tour-flow.net",
+    "url": "https://tour-flow.net"
+  },
+  "description": "The official tour-flow plugin for Claude.",
+  "plugins": [
+    {
+      "name": "tour-flow",
+      "displayName": "tour-flow",
+      "source": "./",
+      "description": "Read and update your tour-flow tours, events and day schedules from Claude.",
+      "author": {
+        "name": "tour-flow",
+        "url": "https://tour-flow.net"
+      },
+      "homepage": "https://tour-flow.net"
+    }
+  ]
+}

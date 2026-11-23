@@ -1,0 +1,26 @@
+{
+  "name": "tour-flow",
+  "displayName": "tour-flow",
+  "version": "0.3.2",
+  "description": "Read and update your tour-flow tours, events and day schedules from Claude.",
+  "author": {
+    "name": "tour-flow",
+    "email": "it@tour-flow.net",
+    "url": "https://tour-flow.net"
+  },
+  "homepage": "https://tour-flow.net",
+  "license": "MIT",
+  "keywords": ["tour management", "live events", "touring", "schedule", "crew"],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://tour-flow.net/docs/claude",
+  "privacyPolicyUrl": "https://tour-flow.net/privacy",
+  "termsOfServiceUrl": "https://tour-flow.net/terms",
+  "supportUrl": "mailto:it@tour-flow.net",
+  "mcpServers": {
+    "tour-flow": {
+      "type": "http",
+      "url": "https://tour-flow.net/api/mcp"
+    }
+  },
+  "repository": "https://github.com/lauritzLbr/tour-flow-claude"
+}
