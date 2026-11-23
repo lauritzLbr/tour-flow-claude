@@ -5,7 +5,10 @@ description: Work with the user's tour-flow workspace, the tour and event manage
 
 # tour-flow
 
-The tour-flow MCP server works on the one workspace the user connected. Every
+The tour-flow MCP server works on the workspaces the user connected. When
+the connection covers several, every tool takes an optional `workspace_id`
+(the server instructions list them; without it the default workspace is
+used). IDs only work in the workspace they come from. Every
 call runs with the user's own permissions, so results only include what they
 can see, and changes only succeed where they may edit in tour-flow. If the
 user allowed read access only, the changing tools are not available.

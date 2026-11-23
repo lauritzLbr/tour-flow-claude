@@ -32,7 +32,7 @@ Then start a new Claude Code session, type `/mcp`, choose the tour-flow server
 and **Authenticate**. A tour-flow page opens in your browser:
 
 1. Sign in with your own tour-flow account.
-2. Pick the workspace Claude may use.
+2. Pick the workspaces Claude may use (one or several).
 3. Choose whether Claude may make changes (turn it off for read-only access).
 4. Click **Allow access**.
 
@@ -84,7 +84,7 @@ anything. File uploads aren't possible through Claude.
 - The plugin contains no code that runs on your computer: a skill (text
   instructions for Claude) and the address of the tour-flow MCP server.
 - Claude connects only to `tour-flow.net`. It acts as your tour-flow account in
-  the one workspace you picked; changes appear in tour-flow's activity log
+  the workspaces you picked; changes appear in tour-flow's activity log
   under your name.
 - Sign-in uses OAuth with PKCE. Claude never sees your password; access tokens
   are short-lived and stored by tour-flow only as hashes.
