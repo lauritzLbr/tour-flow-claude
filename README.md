@@ -3,8 +3,9 @@
 Ask Claude about your tours, shows and day schedules in
 [tour-flow](https://tour-flow.net), the tour and event management app for live
 productions. For example: "What's on this week?", "When is load-in in
-Zurich?", or "Write me a day sheet for Friday's show." With edit access,
-Claude can also create events and update day schedules for you.
+Zurich?", "Where is the crew sleeping in Hamburg?", or "Write me a day sheet
+for Friday's show." With edit access, Claude can also update schedules,
+hotels, contacts, travel, todos and everything else you manage in tour-flow.
 
 The plugin connects Claude to the tour-flow MCP server
 (`https://tour-flow.net/api/mcp`) and adds a skill that teaches Claude how
@@ -48,23 +49,35 @@ claude mcp add --transport http tour-flow https://tour-flow.net/api/mcp --header
 
 ## Tools
 
-| Tool                                         | What it does                                  | Access |
-| -------------------------------------------- | --------------------------------------------- | ------ |
-| `whoami`                                     | Your user, workspace and permissions          | read   |
-| `get_workspace`                              | Workspace timezone, features and status names | read   |
-| `list_tours` / `get_tour`                    | Tours and their details                       | read   |
-| `list_events` / `get_event`                  | Events, optionally per tour or date range     | read   |
-| `get_event_schedule`                         | The day schedule of one event                 | read   |
-| `get_agenda`                                 | Everything in a date range, day by day        | read   |
-| `search`                                     | Tours, events and projects by name            | read   |
-| `create_event`                               | Creates an event                              | write  |
-| `update_event`                               | Changes fields of an event                    | write  |
-| `add_schedule_item` / `update_schedule_item` | Adds or changes one day schedule item         | write  |
-| `delete_schedule_item`                       | Removes one day schedule item                 | delete |
+**Everyday tools** for the questions tour managers ask most:
 
-Write tools are only available when you allowed changes, and only succeed
-where your tour-flow role may edit. Tours and events can't be deleted through
-Claude.
+| Tool                                               | What it does                                                 | Access |
+| -------------------------------------------------- | ------------------------------------------------------------ | ------ |
+| `get_agenda`                                       | Everything in a date range, day by day                       | read   |
+| `get_day_sheet`                                    | One show day: event, schedule, hotels, contacts, crew, notes | read   |
+| `list_tours` / `get_tour`                          | Tours and their details                                      | read   |
+| `list_events` / `get_event` / `get_event_schedule` | Events and their day schedules                               | read   |
+| `search`, `get_workspace`, `whoami`                | Find IDs; workspace settings; who Claude acts as             | read   |
+| `create_event` / `update_event`                    | Create events and change event details                       | write  |
+| `add_schedule_item` / `update_schedule_item`       | Add or change one day schedule item                          | write  |
+| `delete_schedule_item`                             | Remove one day schedule item                                 | delete |
+
+**The full tour-flow API** (about 250 operations in 28 areas: hotels, crew,
+contacts, travel days, flights, off days, production, notes, guest lists,
+todos, checklists, documents, show flows, songs, booklets, crew messages and
+requests, meetings, projects, financials, templates and more):
+
+| Tool                             | What it does                                                 | Access |
+| -------------------------------- | ------------------------------------------------------------ | ------ |
+| `tourflow_api_catalog`           | Lists the areas and operations                               | read   |
+| `tourflow_api_describe`          | Exact parameters and body schema of one operation            | read   |
+| `tourflow_api_read`              | Runs a reading operation                                     | read   |
+| `tourflow_api_write`             | Runs a creating or updating operation                        | write  |
+| `tourflow_api_replace_or_delete` | Runs an operation that replaces a whole list or deletes data | delete |
+
+Changing tools are only available when you allowed changes, and only succeed
+where your tour-flow role may edit. Claude asks before replacing or deleting
+anything. File uploads aren't possible through Claude.
 
 ## Data and privacy
 

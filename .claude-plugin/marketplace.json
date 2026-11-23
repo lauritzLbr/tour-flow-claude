@@ -11,7 +11,7 @@
       "name": "tour-flow",
       "displayName": "tour-flow",
       "source": "./",
-      "description": "Read and update your tour-flow tours, events and day schedules from Claude.",
+      "description": "Work with your tour-flow tours, shows, day sheets, hotels, crew, travel and more from Claude.",
       "author": {
         "name": "tour-flow",
         "url": "https://tour-flow.net"
