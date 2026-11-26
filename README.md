@@ -13,12 +13,19 @@ tour-flow schedules, timezones and tours work. Claude sees and changes only
 what your tour-flow account may see and change, and asks before it removes
 anything.
 
-Full guide: [tour-flow.net/docs/claude](https://tour-flow.net/docs/claude)
+Full guide: [tour-flow.net/docs/ai-agents](https://tour-flow.net/docs/ai-agents)
+
+This plugin is for Claude Code. In claude.ai, Claude Desktop and Claude
+mobile, add tour-flow from the
+[Claude directory](https://claude.ai/directory/3d7212cb-73b4-4f01-8001-c9370a8997c2)
+instead. Other AI agents (ChatGPT, VS Code, Cursor, Codex and any other MCP
+client) can connect to `https://tour-flow.net/api/mcp` directly; see the
+guide.
 
 ## Requirements
 
 - A tour-flow account whose workspace plan includes **API Access** and
-  **Claude & MCP Access**
+  **AI agents & MCP Access**
 - Claude Code
 
 ## Install
@@ -95,4 +102,4 @@ anything. File uploads aren't possible through Claude.
 ## Support
 
 [it@tour-flow.net](mailto:it@tour-flow.net) ·
-[Documentation](https://tour-flow.net/docs/claude)
+[Documentation](https://tour-flow.net/docs/ai-agents)

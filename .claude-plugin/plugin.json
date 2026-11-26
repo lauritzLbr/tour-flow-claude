@@ -1,7 +1,7 @@
 {
   "name": "tour-flow",
   "displayName": "tour-flow",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Work with your tour-flow tours, shows, day sheets, hotels, crew, travel and more from Claude.",
   "author": {
     "name": "tour-flow",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "keywords": ["tour management", "live events", "touring", "schedule", "crew"],
   "icon": "./assets/icon.png",
-  "documentationUrl": "https://tour-flow.net/docs/claude",
+  "documentationUrl": "https://tour-flow.net/docs/ai-agents",
   "privacyPolicyUrl": "https://tour-flow.net/privacy",
   "termsOfServiceUrl": "https://tour-flow.net/terms",
   "supportUrl": "mailto:it@tour-flow.net",
