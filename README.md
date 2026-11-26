@@ -24,8 +24,8 @@ guide.
 
 ## Requirements
 
-- A tour-flow account whose workspace plan includes **API Access** and
-  **AI agents & MCP Access**
+- A tour-flow account whose workspace plan includes
+  **AI agents & MCP Access** (Freelance and Professional)
 - Claude Code
 
 ## Install
@@ -43,12 +43,13 @@ and **Authenticate**. A tour-flow page opens in your browser:
 3. Choose whether Claude may make changes (turn it off for read-only access).
 4. Click **Allow access**.
 
-To disconnect, open tour-flow **Settings > API Keys** and remove Claude under
+To disconnect, open tour-flow **Settings > API & MCP** and remove Claude under
 **Connected apps**. Access stops immediately.
 
 ### Without a browser (CI, scripts)
 
-Connect the MCP server directly with a tour-flow API key instead:
+Connect the MCP server directly with a tour-flow API key instead (API keys
+need a plan with API Access):
 
 ```bash
 claude mcp add --transport http tour-flow https://tour-flow.net/api/mcp --header "Authorization: Bearer <your API key>"

@@ -1,7 +1,7 @@
 {
   "name": "tour-flow",
   "displayName": "tour-flow",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Work with your tour-flow tours, shows, day sheets, hotels, crew, travel and more from Claude.",
   "author": {
     "name": "tour-flow",
